@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 
 function Header() {
     return(
+      <>   
       <div className="header fixed flex aic">
        <div className="logo">
         <svg  viewBox="0 0 1024 1024"
@@ -26,13 +27,17 @@ function Header() {
         </div>
 
         <div className="actions flex aic">
-          <Link to="/account/signin" className="fontb s15"> Sign In </Link>   
-         <button className="sell flex aic">
-          <div className="fas fa-plus s24" />
-          <h2 className="s15 font"> Sell </h2>    
+          <Link to="/account/signin" className="color fontb s16 noul noulh"> Sign In </Link>   
+         <button className="sell flex color aic">
+          <div className="fas fa-plus ico s24" />
+          <h2 className="s18 fontb"> Sell </h2>    
          </button>  
         </div>
       </div>
+      
+      {/*----------------------------------------------------------------*/}
+      
+      </>
     )
 }
 

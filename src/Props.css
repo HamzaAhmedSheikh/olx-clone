@@ -16,11 +16,13 @@ h1, h2, h3, h4, h5, h6 {
 
 .sticky { position: sticky; }
 
-input, button, select, textarea { outline: none; } 
+input, button, select, textarea { outline: none !important; } 
 
 .flex { display: flex; }
 
 .aic {  align-items: center; }
+
+button { cursor: pointer !important; }
 
 .font {
     font-family: 'Open Sans', sans-serif;
@@ -53,6 +55,9 @@ input, button, select, textarea { outline: none; }
 .s30 { font-size: 30px; } 
 
 .noul { text-decoration: none; }
-.noul:hover { text-decoration: underline; }
+.noul:hover { 
+   text-decoration: underline; 
+   color: #002f34 !important;
+}
 
 .cfff { color: #ffffff; }
