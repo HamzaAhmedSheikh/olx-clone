@@ -20,6 +20,10 @@ input, button, select, textarea { outline: none !important; }
 
 .flex { display: flex; }
 
+.bl { display: block !important; }
+
+.ibl { display: inline-block !important; }
+
 .aic {  align-items: center; }
 
 button { cursor: pointer !important; }

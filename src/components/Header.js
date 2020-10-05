@@ -2,6 +2,15 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 function Header() {
+    const nav = [
+        {ID: 1, label: "Mobile Phones"},
+        {ID: 2, label: "Cars"},
+        {ID: 3, label: "Motorcycles"},
+        {ID: 4, label: "Houses"},
+        {ID: 5, label: "TV-Video-Audio"},
+        {ID: 6, label: "Tablets"},
+        {ID: 7, label: "Land & Plots"},
+    ]
     return(
       <>   
       <div className="header fixed flex aic">
@@ -36,6 +45,22 @@ function Header() {
       </div>
       
       {/*----------------------------------------------------------------*/}
+
+      <div className="hnav fixed flex aic">
+        <button className="view-cates flex aic color">
+          <h2 className="s18 font color"> All Categories </h2>    
+          <button className="fas fa-chevron-down arro s24" />
+        </button>          
+        {
+           nav.map(item => {
+              return(
+                  <Link to={"/browser/" + item.ID} className="noul noulh color bl font s15">
+                      {item.label}
+                  </Link>
+              )
+           })  
+        }         
+      </div>
       
       </>
     )
