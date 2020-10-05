@@ -1,0 +1,58 @@
+body {
+    font-size: 14px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0px; 
+    padding: 0px;
+    font-weight: normal;
+}
+
+.fixed { position: fixed !important; }
+
+.rel {  position: relative; }
+
+.abs {  position: absolute; }
+
+.sticky { position: sticky; }
+
+input, button, select, textarea { outline: none; } 
+
+.flex { display: flex; }
+
+.aic {  align-items: center; }
+
+.font {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+}
+
+.font1 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;    
+}
+
+.fontb {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;    
+}
+
+.b {
+    font-weight: bold;
+}
+
+.s12 { font-size: 12px; } 
+.s13 { font-size: 13px; } 
+.s14 { font-size: 14px; } 
+.s15 { font-size: 15px; } 
+.s16 { font-size: 16px; }
+.s18 { font-size: 18px; } 
+.s20 { font-size: 20px; } 
+.s22 { font-size: 22px; } 
+.s24 { font-size: 24px; } 
+.s30 { font-size: 30px; } 
+
+.noul { text-decoration: none; }
+.noul:hover { text-decoration: underline; }
+
+.cfff { color: #ffffff; }

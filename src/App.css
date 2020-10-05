@@ -1,38 +1,78 @@
-.App {
-  text-align: center;
+.color { color: #002f34; }
+
+.header {
+    top: 0px;
+    left: 0px; 
+    right: 0px;
+    height: 70px;
+    z-index: 9;
+    background-color: #f1f1f1;
+    box-shadow: 0 2px 2px #dadada;
+    padding: 0px 18%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header .logo {
+    width: 50px !important;
+    margin-right: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header .logo svg {
+    width: 100% !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.header .location {
+    background: #fff;
+    border: 2px #002f34 solid;
+    border-radius: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+.header .location .ico {
+    padding: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header .location .label {
+    flex: 1;
+    padding: 10px;
+    border: 0px;
 }
+
+.header .location .arro {
+    flex: 1;
+    padding: 10px;
+    border: 0;
+    background: #fff;
+    outline: none;
+    
+}
+
+.header .search {
+    background: #fff;
+    border: 2px #002f34 solid;
+    border-radius: 5px;
+    flex: 2;
+    margin: 0 20px;
+}
+
+.header .search .query {
+    flex: 1;
+    padding: 10px;
+    border: 0;    
+}
+
+.header .search .go {
+    flex: 1;
+    padding: 10px;
+    border: 0;
+    background: #002f34;
+    max-width: 50px;
+}
+
+.header .search .go:hover {}
+
+.header .actions {}
+
+.header .actions a {}
+
+.header .actions .sell {}
+
+.header .actions .sell:hover {}

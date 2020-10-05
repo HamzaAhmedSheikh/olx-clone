@@ -21,8 +21,12 @@
     text-align: center;
 }  
 
+.t-shirts {
+    margin: 10px;
+}
 
-
-
+.card {
+    width: 16rem;
+}
 
 
