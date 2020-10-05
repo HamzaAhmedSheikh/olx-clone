@@ -1,0 +1,28 @@
+/* .product {
+    margin-left: 10px !important;   
+    margin: 3px !important;     
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    width: 103%; 
+    padding: 0px !important;
+}    
+
+.productImg {    
+    margin: 10px;    
+    width: 80%;
+}
+
+ */
+
+.card-img-top {
+    width: 85% !important;
+    padding: 10px;
+    text-align: center;
+}  
+
+
+
+
+
+
