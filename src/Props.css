@@ -18,7 +18,7 @@ h1, h2, h3, h4, h5, h6 {
 
 input, button, select, textarea { outline: none !important; } 
 
-.flex { display: flex; }
+.flex { display: flex !important; }
 
 .bl { display: block !important; }
 
@@ -65,3 +65,14 @@ button { cursor: pointer !important; }
 }
 
 .cfff { color: #ffffff; }
+
+.anim { transition: all 0.2s linear 0s; }
+
+.placeholder {
+    background: #ccc;
+    animation: placeholder 1s linear infinite;
+}
+
+@keyframes placeholder {    
+    50% { opacity: 0.5;   }
+}
