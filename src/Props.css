@@ -20,6 +20,8 @@ input, button, select, textarea { outline: none !important; }
 
 .flex { display: flex !important; }
 
+.flex-col { flex-direction: column !important; }
+
 .bl { display: block !important; }
 
 .ibl { display: inline-block !important; }

@@ -13,7 +13,7 @@ function HomePage() {
    useEffect(() => {
      if(loading) {
        let _list = [];    
-       for(let i = 0; i < 12; i++) {
+       for(let i = 0; i < 20; i++) {
          _list.push(<AdItem placeholder={true} />);
       }
        setList(_list);
@@ -33,7 +33,7 @@ function HomePage() {
 
       <div className="app-ribbon flex aic">
         <div className="img">
-          <img src={PhoneApp} />
+          <img src={PhoneApp} className="bl" />
         </div> 
 
         <div className="meta">
