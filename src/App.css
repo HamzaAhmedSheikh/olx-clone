@@ -1,4 +1,244 @@
+.head {
+    z-index: 10;
+    width: 100%;
+    position: fixed;
+    background: #fff;
+    box-sizing: border-box;
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,.1);
+}
 
+.er {
+    margin: 0 auto;
+    height: 68px;
+}
+
+.er ._2d97D {
+    top: 0;
+}
+
+.er ._1B5Sf {
+    padding: 10px 16px;
+    background-color: #fff;
+    position: fixed;
+    left: 0;
+    z-index: 10;
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.er ._1B5Sf:after {
+    content: "";
+    background-color: rgba(0,47,52,.03);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+.er ._2fu44 {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1280px;
+    position: relative; 
+}
+
+.hJUTK {
+    display: block;
+}       
+
+._2r6hS {
+    height: 48px;
+    z-index: 1;
+    margin-right: 30px
+}
+
+._2r6hS a {
+    height: 100%;
+    display: block;
+    background-color: initial;
+}
+
+.er ._1B5Sf ._2KctL {
+    margin: 0 16px;
+    display: flex;
+    flex: 1;
+}
+
+._3W9XC {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+._18aBn {
+    height: 48px;
+    display: flex;
+    flex: 1;
+    background-color: initial;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.IOsQD {
+    height: 48px;
+    width: 272px;
+    max-height: 320px;
+    overflow: unset;
+    z-index: 6;
+}
+
+.IOsQD ._16LoD {
+    display: flex;
+    align-items: center;
+    height: 48px;
+    background: #fff;
+    padding: 0 8px;
+    box-sizing: border-box;
+    border: 2px solid #002f34;
+    border-radius: 4px;
+}
+
+.IOsQD ._16LoD ._1jABB {
+    height: 40px;
+    width: 100%;
+    outline: 0;
+    border-width: 0;
+    font-size: 16px;
+    color: #002f34;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    background: #fff;
+    padding: 0 0 0 16px;
+}
+
+.IOsQD ._16LoD .I95t7 {
+    transition: transform .5s;
+    position: relative;    
+}
+
+.rui-3mpO_ {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-style: none;
+    background: none;
+    outline: none !important;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+}
+
+._18aBn .zYZEU {
+    display: flex;
+    width: 100%;
+    margin-left: 16px;
+    height: 48px;
+    box-sizing: border-box;
+    border: 2px solid #002f34;
+    border-radius: 4px 0 0 4px;
+}
+
+._18aBn ._2C0uj {
+    width: 100%;
+    display: inline-block;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+._18aBn ._2C0uj ._20jkh {
+    border-style: none;
+    color: #002f34;
+    position: relative;
+    height: 100%;
+    top: 0;
+    z-index: 9;
+}
+
+.rui-Xybo_ button[type=submit] {
+    left: 0;
+}
+
+.rui-Xybo_ {
+     border-width: 0 0 1px;
+    box-sizing: border-box;
+    background-color: initial;
+    font-size: 16px;
+}
+
+.rui-Xybo_ button {
+    top: 5px;
+    width: 40px;
+    padding: 0;
+    position: absolute;
+    margin: 0;
+    color: inherit;
+    border-width: 0;
+    font-size: inherit;
+    vertical-align: top;
+    line-height: inherit;
+    background-color: initial;
+}
+._18aBn ._2C0uj fieldset {
+    right: 0;  
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    padding: 0;
+    height: 100%;
+    border-width: 0;
+    box-sizing: border-box;
+}   
+
+.rui-Xybo_ fieldset>div {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+._18aBn ._2C0uj fieldset div input {
+    border-radius: 0;
+    height: 100%;
+    width: 100%;
+    padding: 0 8px;
+    line-height: normal;
+    outline: none !important;
+}    
+
+._18aBn ._3b3oR {
+    min-width: 48px;
+    height: 48px;
+    display: flex;
+    cursor: pointer;
+    background-color: #002f34;
+    border-radius: 0 4px 4px 0;
+}    
+
+._18aBn ._3b3oR span {
+    margin: auto;    
+}
+
+._14lZ9 {
+    float: right;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+/* @media only screen and (min-width: 1024px) {
+._18aBn {
+    min-width: 630px;
+} */
 
 /* * {
     margin: 0;
