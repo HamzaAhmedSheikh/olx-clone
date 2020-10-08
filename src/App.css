@@ -530,6 +530,27 @@ nav ul a {
 }
 
 .hclr { height: 120px; }
+
+._2Fcb3 {    
+    height: 252px;
+    margin: 0 0 40px;
+    display: flex;
+    align-items: center;
+}
+
+._2Fcb3 ._2gCSl {
+    background-image: url('./images//hero_bg.jpg');
+    height: 252px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    position: absolute;
+    top: 112px;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
 /*
 .home-page { padding: 30px 5%; }
 
