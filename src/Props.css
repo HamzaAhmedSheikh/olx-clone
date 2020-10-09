@@ -26,7 +26,7 @@ input, button, select, textarea { outline: none !important; }
 
 .ibl { display: inline-block !important; }
 
-.aic {  align-items: center; }
+.aic {  align-items: center !important; }
 
 button { cursor: pointer !important; }
 
