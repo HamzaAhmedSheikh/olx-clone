@@ -112,6 +112,47 @@
     color: #002f34;
 }
 
+/*-------------PRODUCTS-----------------*/
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100% !important;
+}
+
+.product {
+    width: 25%;
+    padding: 0 12px;
+    margin: 20px 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.featured {
+    position: absolute;
+    top: 0;
+    background-color: orange;
+    color: #002f34;
+    padding: 5px 6px;
+    font-weight: bold;
+}
+
+.empty {
+    position: absolute;    
+    top: 0;
+    background-color: #fafafa;    
+    padding: 5px 6px;
+    font-weight: bold;    
+}
+
+.empty:hover {   
+    color: red;
+}
+
+.containers {
+    width: 100%;
+    padding: 0 100px;
+}
 
 /*----------------------------------------------------------*/
 /*
