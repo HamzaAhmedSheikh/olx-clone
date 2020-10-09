@@ -131,7 +131,7 @@ const Navbars = () => {
 </Navbar>
 
  
-  <Navbar bg="light">
+  <Navbar bg="light" className='positi'>
     <div className="hnav fixed flex aic">
       <button className="view-cates flex aic color">
         <h2 className="s18 font color"> All Categories </h2>    
