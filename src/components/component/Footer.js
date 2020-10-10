@@ -8,7 +8,8 @@ import { Link } from 'react-router-dom';
  function Footer () {
     return(
      <>   
-      <section> 
+       <div> <button className="load-more fontb cfff anim"> Load More </button> </div> 
+      <section>               
         <div className="app-ribbon flex aic">
          <div className="img">
            <img src={FooterBanner} className="bl" />

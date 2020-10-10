@@ -154,6 +154,21 @@
     padding: 0 100px;
 }
 
+.load-more {
+    margin: 40px auto;
+    display: table;
+    border: 3px #012f34 solid;
+    background: #fff;
+    padding: 8px 16px;
+    border-radius: 10px;
+    color: black
+}
+
+.load-more:hover {
+    box-shadow: inset -1px -1px 0px 25px #012f34;
+    color: #fff;
+}
+
 /*----------------------------------------------------------*/
 /*
 

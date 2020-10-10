@@ -6,6 +6,7 @@ import { Card, Button } from 'react-bootstrap';
     const { products } = useContext(ProductContext);
 
    return(
+     <>
       <div className="products">
         {products.map((product) => (
           <div className="product" key={product.id}>            
@@ -19,10 +20,13 @@ import { Card, Button } from 'react-bootstrap';
              
 
             {product.status === 'FEATURED' ? <div className="featured"> FEATURED </div> : ""}
-            {product.status === '' ? <i className="far fa-heart 7x empty"></i> : ""}
-           </div>             
+            {product.status === '' ? <i className="far fa-heart 7x empty"></i> : ""}            
+           </div>            
         ))}  
-      </div>         
+         
+      </div>    
+
+     </>      
    )   
  }
 
