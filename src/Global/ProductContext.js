@@ -1,7 +1,7 @@
 import React, { createContext, useState } from 'react';
 
 import wirelessheadphone from '../images/wireless-headphones.jpg';
-import cocacola from '../images/coca-cola bottle.jpg';
+import whitecouch from '../images/white-couch.jpg';
 import table from '../images/table.jpg';
 import sofa from '../images/2-seater-sofa.jpg';
 
@@ -14,7 +14,7 @@ const ProductContextProvider = (props) => {
       {id: 3, name: "2 Seater Sofa", price: 28000, image: sofa, status: 'FEATURED'},  
       {id: 4, name: "Wireless Headphones", price: 1600, image: wirelessheadphone, status: ''},
       {id: 5, name: "Wireless Headphones", price: 1700, image: wirelessheadphone, status: ''},
-      {id: 6, name: "Wireless Headphones", price: 1800, image: wirelessheadphone, status: 'FEATURED'},
+      {id: 6, name: "White Couch", price: 18000, image: whitecouch, status: 'FEATURED'},
       {id: 7, name: "Wireless Headphones", price: 1900, image: wirelessheadphone, status: ''},
       {id: 8, name: "Wireless Headphones", price: 2000, image: wirelessheadphone, status: 'FEATURED'},
       {id: 9, name: "Wireless Headphones", price: 2000, image: wirelessheadphone, status: ''},
