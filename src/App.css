@@ -95,6 +95,8 @@
     z-index: 1;
 }
 
+/*-------------------------------Footer----------------------------------------*/
+
 .app-ribbon {
     padding: 0px 2%;
     background: #f9f9f9;
@@ -110,6 +112,44 @@
     font-weight: 400;
     margin: 0;
     color: #002f34;
+}
+
+.footer {
+    padding: 0px 18%;
+    background: #f1f1f1;
+    border-top: 1px #ccc solid;    
+}
+
+.footer .block {
+    flex: 1;
+    padding: 20px 0px 50px 0px;
+}
+
+.footer .block .title { margin-bottom: 10px; } 
+
+.footer .block a { 
+    line-height: 1.6;
+    color: rgba(0,47,52,.64) !important;
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.footer .block a:hover {
+    color: #002f34 !important;
+}
+
+.footerb {
+    padding: 15px 18px;
+    background: #012f34;
+}
+
+.footerb h2 {
+    flex: 1;
+}
+
+.footerb h2.r {
+    text-align: right;
 }
 
 /*-------------PRODUCTS-----------------*/
