@@ -9,19 +9,22 @@ import Navbars from './components/component/Navbar';
 import Banner from './components/component/Banner';
 import ProductContextProvider from './Global/ProductContext';
 import Products from './components/component/Products';
-import { Test } from './components/component/Test'
+import ContactDataProvider from './components/Context/ProductData'
+import Product from './components/component/Test'
 
 function App() {
   return (
     <Router>
-      <Navbars />
-      <Banner />
-      <Route path="/Form" component={Test} />   
+      <Navbars />      
+      <Banner />       
       <ProductContextProvider>
         <div className='containers'>
          <Route path="/" component={Products} />  
         </div>
-      </ProductContextProvider>         
+      </ProductContextProvider>   
+      <ContactDataProvider>    
+        <Product />  
+      </ContactDataProvider>    
       <Footer />      
     </Router>    
   );
