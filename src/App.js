@@ -9,18 +9,19 @@ import Navbars from './components/component/Navbar';
 import Banner from './components/component/Banner';
 import ProductContextProvider from './Global/ProductContext';
 import Products from './components/component/Products';
+import { Test } from './components/component/Test'
 
 function App() {
   return (
     <Router>
       <Navbars />
       <Banner />
+      <Route path="/Form" component={Test} />   
       <ProductContextProvider>
         <div className='containers'>
          <Route path="/" component={Products} />  
         </div>
-      </ProductContextProvider>
-      {/* <Route path="/" component={HomePage} />       */}
+      </ProductContextProvider>         
       <Footer />      
     </Router>    
   );

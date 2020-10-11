@@ -209,6 +209,18 @@
     color: #fff;
 }
 
+@media(max-width: 765px) {
+    .products {
+        flex-direction: column;
+    }
+    
+    .product {
+        width: 100%;
+    }
+
+}
+
+
 /*----------------------------------------------------------*/
 /*
 

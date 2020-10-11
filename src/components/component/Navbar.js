@@ -11,6 +11,7 @@ import { FormControl } from 'react-bootstrap';
 import { Button } from 'react-bootstrap';
 
 
+
 // const useStyles = makeStyles((theme) => ({
 //     grow: {
 //       flexGrow: 1,
@@ -84,7 +85,8 @@ import { Button } from 'react-bootstrap';
         {ID: 7, label: "Land & Plots"},
    ]
 
-const Navbars = () => {      
+const Navbars = () => {    
+   
   return (
     <>
     <Navbar bg="light" expand="lg">
@@ -123,8 +125,10 @@ const Navbars = () => {
      <div className="actions flex">
       <Link to="/account/signin" className="color fontb s16 noul noulh"> Sign In </Link>   
        <button className="sell flex color aic">
-        <div className="fas fa-plus ico" />
-         <h2 className="s18 fontb"> Sell </h2>    
+        <div className="fas fa-plus ico" />         
+          <h2 className="s18 fontb">
+           <Link to="./fillform" > Sell </Link> 
+           </h2>            
        </button>  
      </div>  
   </Navbar.Collapse>  
