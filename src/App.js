@@ -11,6 +11,7 @@ import ProductContextProvider from './Global/ProductContext';
 import Products from './components/component/Products';
 import ContactDataProvider from './components/Context/ProductData'
 import Product from './components/component/Test'
+import ProductForm from './components/component/ProductForm'
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
       </ProductContextProvider>   
       <ContactDataProvider>    
         <Product />  
+        <ProductForm />
       </ContactDataProvider>    
       <Footer />      
     </Router>    
