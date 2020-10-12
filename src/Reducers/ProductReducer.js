@@ -2,6 +2,7 @@ export const ProductReducer = (state, action) => {
     
     switch(action.type) {
         case 'ADD_CONTACT':
+           
             return [...state, action.newProduct];  
 
         case "REMOVE_PRODUCT": 

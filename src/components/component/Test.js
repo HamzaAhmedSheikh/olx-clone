@@ -12,8 +12,9 @@ import  ProductDetails from './ProductDetails';
          <tr>
           <th> Name  </th>   
           <th> Email  </th>   
-          <th> Phone  </th>   
-          <th> Delete </th>   
+          <th> Phone  </th>  
+          <th> Pic </th>  
+          <th> Delete </th>        
          </tr>  
        </thead>   
 

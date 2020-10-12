@@ -5,11 +5,12 @@ import { v4 as uuidv4 } from 'uuid';
 
 
  const ProductForm = () => {
-    const { dispatch } = useContext(ContactData) ;
-
+    const  { dispatch }  = useContext(ContactData) ;
+     
     const [name, setName, resetName] = InputHook("");
     const [email, setEmail, resetEmail] = InputHook("");
     const [phone, setPhone, resetPhone] = InputHook("");
+    const [img, setImage, resetImage] = InputHook("");
 
     const addNewProduct = e => {
       e.preventDefault();
@@ -18,12 +19,14 @@ import { v4 as uuidv4 } from 'uuid';
                   id: uuidv4(),
                   name: name,
                   email: email,
-                  phone: phone,  }
+                  phone: phone,                                          
+                }
       });
       
       resetName("");
       resetEmail("");
       resetPhone("");
+      resetImage("");
        
     }
 
@@ -45,9 +48,14 @@ import { v4 as uuidv4 } from 'uuid';
                   placeholder='Enter Phone' value={phone} onChange={setPhone}    />  
          </div>  
 
+         <div>
+          <label for="myfile">Select files:</label>
+          <input type="file" id="myfile" name="myfile" multiple value={img} onChange={setImage}  />         
+         </div>
+
+
          <div className="form-group">
-           <input type="submit" name="name" 
-                                className="btn btn-info btn-block"  />  
+           <input type="submit" name="pic-profile" className="btn btn-block btn-info" />  
          </div>  
        </form>
       </>
