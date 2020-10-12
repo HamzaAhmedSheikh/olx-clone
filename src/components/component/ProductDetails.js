@@ -2,10 +2,10 @@ import React, { useContext } from 'react'
 import  { ContactData } from '../Context/ProductData'
 
 const ProductDetails = ({user}) => {
-      console.log(user);
-  const { dispatch } = useContext(ContactData);  
+      
+  const  { dispatch }  = useContext(ContactData);  
 
-
+                 
     return (
      <>   
       <td> {user.name} </td>         

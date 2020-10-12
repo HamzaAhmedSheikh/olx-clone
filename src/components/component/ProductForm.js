@@ -1,17 +1,25 @@
-import React, {useContext} from 'react';
+import React, {useContext, useState} from 'react';
 import { ContactData } from '../Context/ProductData';
 import InputHook from './InputHooks'
 import { v4 as uuidv4 } from 'uuid';
 
 
- const ProductForm = () => {
-    const  { dispatch }  = useContext(ContactData) ;
+ const ProductForm = () => {   
+    const {dispatch, users} = useContext(ContactData) ;     
+
+    function extract() {
+      users.map(e => (
+         <img src={e.image} alt="pics" />
+      ))
+    }     
      
     const [name, setName, resetName] = InputHook("");
     const [email, setEmail, resetEmail] = InputHook("");
     const [phone, setPhone, resetPhone] = InputHook("");
-    const [img, setImage, resetImage] = InputHook("");
+    const [img, setImg] = useState([]);
 
+    let a = () => ( setImg() )
+       console.log(a);
     const addNewProduct = e => {
       e.preventDefault();
       dispatch({type: "ADD_CONTACT",
@@ -19,14 +27,15 @@ import { v4 as uuidv4 } from 'uuid';
                   id: uuidv4(),
                   name: name,
                   email: email,
-                  phone: phone,                                          
+                  phone: phone,
+                  image: a,                                                                                        
                 }
       });
       
       resetName("");
       resetEmail("");
       resetPhone("");
-      resetImage("");
+     
        
     }
 
@@ -50,7 +59,7 @@ import { v4 as uuidv4 } from 'uuid';
 
          <div>
           <label for="myfile">Select files:</label>
-          <input type="file" id="myfile" name="myfile" multiple value={img} onChange={setImage}  />         
+          <input type="file" id="myfile" name="myfile" multiple value={img} onChange={setImg}  />         
          </div>
 
 
