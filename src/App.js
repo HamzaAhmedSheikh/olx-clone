@@ -12,7 +12,8 @@ import Products from './components/component/Products';
 import ContactDataProvider from './components/Context/ProductData'
 import Product from './components/component/Test'
 import ProductForm from './components/component/ProductForm'
-
+import TodoInput from './components/component/TodoInput' 
+import TodoList from './components/component/TodoList'
 function App() {
   return (
     <Router>
@@ -23,10 +24,8 @@ function App() {
          <Route path="/" component={Products} />  
         </div>
       </ProductContextProvider>   
-      <ContactDataProvider>    
-        <Product />  
-        <ProductForm />
-      </ContactDataProvider>    
+      <TodoInput />
+      <TodoList />
       <Footer />      
     </Router>    
   );
