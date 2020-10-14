@@ -7,31 +7,48 @@ import { v4 as uuidv4 } from 'uuid';
  const ProductForm = () => {   
     const {dispatch, users} = useContext(ContactData) ;     
 
-    function extract() {
-      users.map(e => (
-         <img src={e.image} alt="pics" />
-      ))
-    }     
+         
      
     const [name, setName, resetName] = InputHook("");
     const [email, setEmail, resetEmail] = InputHook("");
     const [phone, setPhone, resetPhone] = InputHook("");
-    const [img, setImg] = useState([]);
+    const [selectedImages, setSelectedImages] = useState([]);
 
-    let a = () => ( setImg() )
-       console.log(a);
+    const imageHandleChange = (e) => {
+      // console.log(e.target.files);
+
+      if(e.target.files) {
+        const fileArray = Array.from(e.target.files).map((file) => URL.createObjectURL(file))
+            // console.log(fileArray, '===> File Array');
+
+          setSelectedImages((prevImages) => prevImages.concat(fileArray))  
+          
+          Array.from(e.target.files).map((file) => URL.revokeObjectURL(file))
+
+      }
+
+    }
+
+    const renderPhotos = (source) => {
+      return source.map((photo) => {
+        return <img src={photo} key={photo} alt="pics" />
+      })
+    }
+           
     const addNewProduct = e => {
-      e.preventDefault();
+      e.preventDefault();      
+      console.log("e ====>", e);
+
       dispatch({type: "ADD_CONTACT",
                 newProduct: {
                   id: uuidv4(),
                   name: name,
                   email: email,
                   phone: phone,
-                  image: a,                                                                                        
-                }
-      });
-      
+                  image:  "abc",                                                                                                                         
+                }         
+            });
+     
       resetName("");
       resetEmail("");
       resetPhone("");
@@ -58,8 +75,13 @@ import { v4 as uuidv4 } from 'uuid';
          </div>  
 
          <div>
-          <label for="myfile">Select files:</label>
-          <input type="file" id="myfile" name="myfile" multiple value={img} onChange={setImg}  />         
+           <input type="file" id="file" multiple onChange={imageHandleChange} />
+           <label htmlFor="file" className="label">
+             <i className="material-icons">add_a_photo</i>
+           </label>                
+         </div>
+
+         <div className="result">           
          </div>
 
 
