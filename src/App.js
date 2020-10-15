@@ -14,11 +14,15 @@ import Product from './components/component/Test'
 import ProductForm from './components/component/ProductForm'
 import TodoInput from './components/component/TodoInput' 
 import TodoList from './components/component/TodoList'
+
+
+
 function App() {
   return (
     <Router>
       <Navbars />      
       <Banner />       
+      
       <ProductContextProvider>
         <div className='containers'>
          <Route path="/" component={Products} />  
@@ -26,6 +30,7 @@ function App() {
       </ProductContextProvider>   
       <TodoInput />
       <TodoList />
+         
       <Footer />      
     </Router>    
   );
