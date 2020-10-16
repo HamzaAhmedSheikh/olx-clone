@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import  { addTodo } from '../../redux/actions';
+import { uploadImg } from '../../redux/actions'
 import { v1 as uuid } from 'uuid';
 import { useDispatch } from 'react-redux';
 import DisplayImage from './DisplayImage'
@@ -19,8 +20,7 @@ const TodoInput = () => {
   };
        
   
-
-  
+ 
     return (      
       <div>       
        <div classNam e="row m-2">
