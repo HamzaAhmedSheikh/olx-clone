@@ -115,7 +115,7 @@
 }
 
 .footer {
-    padding: 0px 18%;
+    padding: 0px 6%;
     background: #f1f1f1;
     border-top: 1px #ccc solid;    
 }
@@ -133,6 +133,7 @@
     font-size: 14px;
     font-weight: 400;
     text-decoration: none;
+    margin-left: 2px;
 }
 
 .footer .block a:hover {
@@ -151,6 +152,36 @@
 .footerb h2.r {
     text-align: right;
 }
+
+.foot {
+    display: flex;
+    flex-direction: row;
+}
+
+.fff {
+    display: inline-block !important;    
+    margin: 5px !important;
+}    
+
+.fff a {
+    margin: -5px !important;
+    padding: 5px !important;
+    text-decoration: none !important;
+}
+
+.fff a:hover {
+    text-decoration: none !important;
+}
+
+.fff a i {
+    font-size: 25px;
+    border-radius: 10px;   
+    margin-top: -10px;
+    padding: 10px;
+    margin-left: -12px !important;
+}
+
+
 
 /*-------------PRODUCTS-----------------*/
 

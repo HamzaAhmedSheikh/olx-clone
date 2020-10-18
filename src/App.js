@@ -9,11 +9,12 @@ import Navbars from './components/component/Navbar';
 import Banner from './components/component/Banner';
 import ProductContextProvider from './Global/ProductContext';
 import Products from './components/component/Products';
-import ContactDataProvider from './components/Context/ProductData'
-import Product from './components/component/Test'
-import ProductForm from './components/component/ProductForm'
-import TodoInput from './components/component/TodoInput' 
-import TodoList from './components/component/TodoList';
+// import ContactDataProvider from './components/Context/ProductData'
+// import Product from './components/component/Test'
+// import ProductForm from './components/component/ProductForm'
+// import TodoInput from './components/component/TodoInput' 
+// import TodoList from './components/component/TodoList';
+import Footers from './components/component/Footers'
 
 
 

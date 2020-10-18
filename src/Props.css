@@ -60,9 +60,9 @@ button { cursor: pointer !important; }
 .s24 { font-size: 24px; } 
 .s30 { font-size: 30px; } 
 
-.noul { text-decoration: none; }
+.noul { text-decoration: none !important; }
 .noul:hover { 
-   text-decoration: underline; 
+   text-decoration: underline !important; 
    color: #002f34 !important;
 }
 

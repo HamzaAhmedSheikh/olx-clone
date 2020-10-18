@@ -8,7 +8,7 @@ import Min from '../../images/minion.jpg'
      <>   
       <section>
         <div className="_2Fcb3">
-          <div class="_2gCSl _3TqoF">        
+          <div className="_2gCSl _3TqoF">        
           </div>   
         </div>    
 
