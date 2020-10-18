@@ -13,24 +13,20 @@ import ContactDataProvider from './components/Context/ProductData'
 import Product from './components/component/Test'
 import ProductForm from './components/component/ProductForm'
 import TodoInput from './components/component/TodoInput' 
-import TodoList from './components/component/TodoList'
+import TodoList from './components/component/TodoList';
 
 
 
 function App() {
   return (
     <Router>
-      <Navbars />      
-      <Banner />       
-      
+      <Navbars />    
+      <Banner />            
       <ProductContextProvider>
         <div className='containers'>
          <Route path="/" component={Products} />  
         </div>
-      </ProductContextProvider>   
-      <TodoInput />
-      <TodoList />
-         
+      </ProductContextProvider>              
       <Footer />      
     </Router>    
   );

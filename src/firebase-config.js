@@ -1,6 +1,6 @@
-importScripts("https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js");
- 
-  const firebaseConfig = {
+import * as firebase from 'firebase';
+
+ const firebaseConfig = {
     apiKey: "AIzaSyD8SlSK0y9E70rJExfZgtfSwoNRSINYINc",
     authDomain: "olx-clone-a4154.firebaseapp.com",
     databaseURL: "https://olx-clone-a4154.firebaseio.com",
@@ -11,6 +11,8 @@ importScripts("https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js");
     measurementId: "G-NVM0CLQM2Q"
   };
   
-  firebase.initializeApp(firebaseConfig);
+  let myApp = firebase.initializeApp(firebaseConfig);
+
+  export default myApp;
   
 
