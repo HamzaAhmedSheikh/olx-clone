@@ -24,7 +24,9 @@ import { Card, Button } from 'react-bootstrap';
            </div>            
         ))}  
          
-      </div>    
+      </div>  
+
+      <button className="load-more fontb cfff anim s20"> Load More </button>    
 
      </>      
    )   

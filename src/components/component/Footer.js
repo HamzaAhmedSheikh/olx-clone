@@ -9,9 +9,9 @@ import { Link } from 'react-router-dom';
 
  function Footer () {
     return(
-     <>   
-       <button className="load-more fontb cfff anim s20"> Load More </button>  
-      <section>               
+     <>          
+      <section>         
+       
         <div className="app-ribbon flex aic">
          <div className="img">
            <img src={FooterBanner} className="bl" />

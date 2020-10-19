@@ -14,7 +14,7 @@ import Products from './components/component/Products';
 // import ProductForm from './components/component/ProductForm'
 // import TodoInput from './components/component/TodoInput' 
 // import TodoList from './components/component/TodoList';
-import Footers from './components/component/Footers'
+import PostYourAds from './components/component/PostAds'
 
 
 
@@ -25,9 +25,11 @@ function App() {
       <Banner />            
       <ProductContextProvider>
         <div className='containers'>
-         <Route path="/" component={Products} />  
+         <Route exact path="/" component={Products} />  
+         <Route path="/post-your-add" component={PostYourAds} />   
         </div>
-      </ProductContextProvider>              
+      </ProductContextProvider> 
+     
       <Footer />      
     </Router>    
   );
