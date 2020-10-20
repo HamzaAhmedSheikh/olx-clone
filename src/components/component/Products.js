@@ -1,13 +1,14 @@
 import React, { useContext } from 'react';
 import { ProductContext } from '../../Global/ProductContext'
 import { Card, Button } from 'react-bootstrap';
+import {  user  } from './PostAds'
 
  const Products = () => {
     const { products } = useContext(ProductContext);
 
    return(
      <>
-      <div className="products">
+      <div className="products">      
         {products.map((product) => (
           <div className="product" key={product.id}>            
               <Card style={{ width: '18rem' }}>
@@ -23,6 +24,8 @@ import { Card, Button } from 'react-bootstrap';
             {product.status === '' ? <i className="far fa-heart 7x empty"></i> : ""}            
            </div>            
         ))}  
+
+                { console.log(user) }
          
       </div>  
 
