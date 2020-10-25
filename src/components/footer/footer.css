@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap");
+
+.main_box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: #ebeeef;
+}
+
+.main_box .main_layer {
+    width: 95%;
+    display: flex;
+    margin: 20px 0;
+    justify-content: center;
+}
+.main_layer .popular,
+.trending,
+.about,
+.olx,
+.follow {
+    width: 19%;
+    display: flex;
+    flex-direction: column;
+}
+
+.follow .social_icons {
+    width: auto;
+    display: flex;
+}
+
+.social_icons * {
+    margin-right: 5px;
+    padding: 3px;
+    border: 1px solid rgba(0, 47, 52, 0.64);
+    color: rgba(0, 47, 52, 0.64);
+    border-radius: 50px;
+}
+
+.main_layer h2 {
+    color: #002f34;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 15px;
+}
+
+.main_layer p {
+    font-size: 13px;
+    font-family: "Roboto", sans-serif;
+    color: rgba(0, 47, 52, 0.64);
+    margin: 0;
+    margin-bottom: 3px;
+}
+
+.main_layer .follow .links_icon {
+    display: flex;
+    padding: 20px 0 10px 0;
+}
+
+.links_icon img {
+    margin-right: 3px;
+    width: 100px;
+}
+
+
+.main_layer p:hover {
+    color: #002f34;
+    cursor: pointer;
+}
+  
+ 
+  /*---------------------------------- bottom footer ---------------------------------------*/
+ 
+  
+.down_box {
+    width: 100%;
+    padding: 10px 0 0 0;
+    background: #002f34;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.down_box .copyright_area {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copyright_area .first,
+.copyright_area .second {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.first h3, .second h3 {
+    font-family: "Roboto", sans-serif;
+    font-weight: bolder;
+    font-size: 13px;
+    color: #fff;
+    margin-right: 10px;
+}
+
+.first p, .second p {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    color: #fff;
+    margin-top: 10px;
+}

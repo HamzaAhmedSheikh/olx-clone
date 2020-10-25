@@ -38,12 +38,12 @@ import Products from './Products'
       event.preventDefault();   
       
 
-     user = {
-        name: this.state.name,      
-        age: this.state.age,
-        category: this.state.category,
-        id: v1(),
-    };   
+    //  user = {
+    //     name: this.state.name,      
+    //     age: this.state.age,
+    //     category: this.state.category,
+    //     id: v1(),
+    // };   
    
   } 
     

@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { ProductContext } from '../../Global/ProductContext'
 import { Card, Button } from 'react-bootstrap';
-import {  user  } from './PostAds'
+
 
  const Products = () => {
     const { products } = useContext(ProductContext);
@@ -23,9 +23,7 @@ import {  user  } from './PostAds'
             {product.status === 'FEATURED' ? <div className="featured"> FEATURED </div> : ""}
             {product.status === '' ? <i className="far fa-heart 7x empty"></i> : ""}            
            </div>            
-        ))}  
-
-                { console.log(user) }
+        ))}                 
          
       </div>  
 

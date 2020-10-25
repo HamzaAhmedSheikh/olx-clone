@@ -4,7 +4,8 @@ import './App.css';
 import { BrowserRouter as Router, Route } from "react-router-dom";
 // import HomePage from './components/Home'
 // import Header from './components/Header'
-import Footer from './components/component/Footer';
+// import Footer from './components/component/Footer';
+import Footer from './components/footer/MainFooter';
 import Navbars from './components/component/Navbar';
 import Banner from './components/component/Banner';
 import ProductContextProvider from './Global/ProductContext';
@@ -15,6 +16,7 @@ import Products from './components/component/Products';
 // import TodoInput from './components/component/TodoInput' 
 // import TodoList from './components/component/TodoList';
 import PostYourAds from './components/component/PostAds'
+
 
 
 
