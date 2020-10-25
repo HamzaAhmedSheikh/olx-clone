@@ -1,0 +1,194 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Inter&family=Nanum+Gothic:wght@700&family=Piazzolla:wght@200&family=Sansita+Swashed:wght@300&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .box {
+    width: 100%;
+    height: 60px;
+    background: #fdfdfd;
+    display: flex;
+    justify-content: flex-start;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+  }
+  .box .logo {
+    /* border: 2px solid; */
+    width: 100px;
+    height: 100%;
+    padding: 18px 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .box .logo img {
+    width: 100%;
+    height: 100%;
+  }
+  .box .search-area {
+    height: 100%;
+    width: 300px;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-right: 20px;
+  }
+  .search-area select {
+    width: 100%;
+    height: 100%;
+    appearance: none;
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid #000;
+    padding: 0 10px;
+    color: #002f34;
+    white-space: nowrap;
+    font-size: 16px;
+  }
+  .box select:focus,
+  .search input:focus {
+    border-color: cyan;
+  }
+  .box .search {
+    height: 100%;
+    width: 53%;
+    padding: 10px 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .search input {
+    width: 92%;
+    height: 100%;
+    border: 2px solid #000;
+    border-radius: 5px 0 0 5px;
+    padding: 0 10px;
+    outline: none;
+  }
+  .search .search-bttn {
+    width: 60px;
+    background: #002f34;
+    height: 100%;
+    border-radius: 0 5px 5px 0;
+    padding: 7px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .box .links {
+    width: 200px;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 0 0 30px;
+  }
+  .links a {
+    font-size: 18px;
+    color: #002f34;
+    margin: 0 10px 0 0;
+    font-family: "Inter", sans-serif;
+    text-decoration: underline;
+    font-weight: 600;
+  }
+  .links .sellBtn {
+    padding: 0px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid #19bfd4;
+    border-radius: 50px;
+    margin: 0 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+  }
+  .links h2 {
+    font-size: 18px;
+    color: #002f34;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-top: 7px;
+    margin-left: 2px;
+  }
+  /*  */
+  /*  */
+  .menu-bar {
+    width: 100%;
+    margin-top: 60px;
+    height: auto;
+    background: #fff;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 0 0 30px;
+  }
+  .menu-bar .main-bar {
+    display: flex;
+    cursor: pointer;
+  }
+  .main-bar h1 {
+    font-size: 16px;
+    font-family: "Merriweather", serif;
+    font-weight: bold;
+    padding-top: 10px;
+  }
+  .main-bar .downIcon {
+    font-size: 40px;
+    transition: all 0.3s linear;
+  }
+  .menu-bar .other-list {
+    display: flex;
+    padding-top: 12px;
+    margin-left: 10px;
+  }
+  
+  .other-list ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+  }
+  .other-list ul li {
+    margin: 0 10px;
+    font-size: 15px;
+  }
+  .other-list ul li:hover {
+    color: #2b9eca;
+    cursor: pointer;
+  }
+  
+  /*  */
+  /*  */
+  .menubar-list h5 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  .menubar-list ul {
+    list-style: none;
+    margin-bottom: 30px;
+  }
+  .menubar-list ul li {
+    font-size: 14px;
+    margin: 4px 0;
+    font-weight: 400;
+  }
+  .menubar-list ul li:hover,
+  .menubar-list h5:hover {
+    color: #2b9eca;
+    cursor: pointer;
+  }

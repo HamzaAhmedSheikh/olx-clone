@@ -6,7 +6,8 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 // import Header from './components/Header'
 // import Footer from './components/component/Footer';
 import Footer from './components/footer/MainFooter';
-import Navbars from './components/component/Navbar';
+// import Navbars from './components/component/Navbar';
+import Navbars from './components/header/Header'
 import Banner from './components/component/Banner';
 import ProductContextProvider from './Global/ProductContext';
 import Products from './components/component/Products';
@@ -23,8 +24,7 @@ import PostYourAds from './components/component/PostAds'
 function App() {
   return (
     <Router>
-      <Navbars />    
-      <Banner />            
+      <Navbars />           
       <ProductContextProvider>
         <div className='containers'>
          <Route exact path="/" component={Products} />  
