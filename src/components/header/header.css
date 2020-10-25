@@ -5,12 +5,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-  body {
+}
+
+body {
     background: #fff;
     font-family: Arial, Helvetica, sans-serif;
-  }
-  .box {
+}
+
+.box {
     width: 100%;
     height: 60px;
     background: #fdfdfd;
@@ -21,21 +23,23 @@
     top: 0;
     left: 0;
     z-index: 100;
-  }
-  .box .logo {
-    /* border: 2px solid; */
+}
+
+.box .logo {
     width: 100px;
     height: 100%;
     padding: 18px 26px;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  .box .logo img {
+}
+
+.box .logo img {
     width: 100%;
     height: 100%;
-  }
-  .box .search-area {
+}
+
+.box .search-area {
     height: 100%;
     width: 300px;
     padding: 10px 0;
@@ -44,8 +48,9 @@
     align-items: center;
     position: relative;
     margin-right: 20px;
-  }
-  .search-area select {
+}
+
+.search-area select {
     width: 100%;
     height: 100%;
     appearance: none;
@@ -56,28 +61,32 @@
     color: #002f34;
     white-space: nowrap;
     font-size: 16px;
-  }
-  .box select:focus,
-  .search input:focus {
+}
+
+.box select:focus,
+.search input:focus {
     border-color: cyan;
-  }
-  .box .search {
+}
+
+.box .search {
     height: 100%;
     width: 53%;
     padding: 10px 0;
     display: flex;
     justify-content: flex-start;
     align-items: center;
-  }
-  .search input {
+}
+
+.search input {
     width: 92%;
     height: 100%;
     border: 2px solid #000;
     border-radius: 5px 0 0 5px;
     padding: 0 10px;
     outline: none;
-  }
-  .search .search-bttn {
+}
+
+.search .search-bttn {
     width: 60px;
     background: #002f34;
     height: 100%;
@@ -87,24 +96,27 @@
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  .box .links {
+}
+
+.box .links {
     width: 200px;
     height: 100%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     padding: 0 0 0 30px;
-  }
-  .links a {
+}
+
+.links a {
     font-size: 18px;
     color: #002f34;
     margin: 0 10px 0 0;
     font-family: "Inter", sans-serif;
     text-decoration: underline;
     font-weight: 600;
-  }
-  .links .sellBtn {
+}
+
+.links .sellBtn {
     padding: 0px 10px;
     display: flex;
     justify-content: center;
@@ -114,8 +126,9 @@
     margin: 0 10px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
     cursor: pointer;
-  }
-  .links h2 {
+}
+
+.links h2 {
     font-size: 18px;
     color: #002f34;
     font-family: "Inter", sans-serif;
@@ -123,10 +136,11 @@
     text-transform: uppercase;
     padding-top: 7px;
     margin-left: 2px;
-  }
+}
   /*  */
   /*  */
-  .menu-bar {
+
+.menu-bar {
     width: 100%;
     margin-top: 60px;
     height: auto;
@@ -135,60 +149,70 @@
     justify-content: flex-start;
     align-items: center;
     padding: 0 0 0 30px;
-  }
-  .menu-bar .main-bar {
+}
+
+.menu-bar .main-bar {
     display: flex;
     cursor: pointer;
-  }
-  .main-bar h1 {
+}
+
+.main-bar h1 {
     font-size: 16px;
     font-family: "Merriweather", serif;
     font-weight: bold;
     padding-top: 10px;
-  }
-  .main-bar .downIcon {
+}
+
+.main-bar .downIcon {
     font-size: 40px;
     transition: all 0.3s linear;
-  }
-  .menu-bar .other-list {
+}
+
+.menu-bar .other-list {
     display: flex;
     padding-top: 12px;
     margin-left: 10px;
-  }
+}
   
-  .other-list ul {
+.other-list ul {
     list-style: none;
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
-  }
-  .other-list ul li {
+}
+
+.other-list ul li {
     margin: 0 10px;
     font-size: 15px;
-  }
-  .other-list ul li:hover {
+}
+
+.other-list ul li:hover {
     color: #2b9eca;
     cursor: pointer;
-  }
+}
   
   /*  */
   /*  */
-  .menubar-list h5 {
+
+.menubar-list h5 {
     font-size: 16px;
     font-weight: bold;
     margin-bottom: 15px;
-  }
-  .menubar-list ul {
+}
+
+.menubar-list ul {
     list-style: none;
     margin-bottom: 30px;
-  }
-  .menubar-list ul li {
+}
+
+.menubar-list ul li {
     font-size: 14px;
     margin: 4px 0;
     font-weight: 400;
-  }
-  .menubar-list ul li:hover,
-  .menubar-list h5:hover {
+}
+
+.menubar-list ul li:hover,
+.menubar-list h5:hover {
     color: #2b9eca;
     cursor: pointer;
-  }
+}

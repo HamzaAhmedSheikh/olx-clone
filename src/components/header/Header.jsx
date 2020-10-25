@@ -11,22 +11,22 @@ class Header extends Component {
       super();
       this.state = {
         hideShow: { display: "none" },
-        cnd: true,
+        nav: true,
         rotate: {},
       };
     }
   
     mainHideShowFunc = () => {
-      if (this.state.cnd == true) {
+      if (this.state.nav == true) {
         this.setState({
           hideShow: { paddingTop: "20px" },
-          cnd: false,
+          nav: false,
           rotate: { transform: "rotate(180deg)" },
         });
       } else {
         this.setState({
           hideShow: { display: "none" },
-          cnd: true,
+          nav: true,
           rotate: { transform: "rotate(0deg)" },
         });
       }
@@ -102,18 +102,21 @@ class Header extends Component {
                     return <li key={ind}>{val}</li>;
                   })}
                 </ul>
+
                 <h5>Books, Sports & Hobbies</h5>
                 <ul>
                   {allData.BooksSportsData.map((val, ind) => {
                     return <li key={ind}>{val}</li>;
                   })}
                 </ul>
+
                 <h5>Fashion & Beauty</h5>
                 <ul>
                   {allData.FashionData.map((val, ind) => {
                     return <li key={ind}>{val}</li>;
                   })}
                 </ul>
+
                 <h5>Furniture & Home Decor</h5>
                 <ul>
                   {allData.FurnitureData.map((val, ind) => {
@@ -121,6 +124,7 @@ class Header extends Component {
                   })}
                 </ul>
               </div>
+
               <div className="col-3">
                 <h5>Animals</h5>
                 <ul>
@@ -128,6 +132,7 @@ class Header extends Component {
                     return <li key={ind}>{val}</li>;
                   })}
                 </ul>
+
                 <h5>Jobs</h5>
                 <ul>
                   {allData.JobData.map((val, ind) => {
@@ -135,6 +140,7 @@ class Header extends Component {
                   })}
                 </ul>
               </div>
+
               <div className="col-3">
                 <h5>Services</h5>
                 <ul>
@@ -142,18 +148,21 @@ class Header extends Component {
                     return <li key={ind}>{val}</li>;
                   })}
                 </ul>
+
                 <h5>Business, Industrial & Agriculture</h5>
                 <ul>
                   {allData.BusinessData.map((val, ind) => {
                     return <li key={ind}>{val}</li>;
                   })}
                 </ul>
+
                 <h5>Bikes</h5>
                 <ul>
                   {allData.BikeData.map((val, ind) => {
                     return <li key={ind}>{val}</li>;
                   })}
                 </ul>
+
                 <h5>Electronics & Home Appliances</h5>
                 <ul>
                   {allData.Electronicdata.map((val, ind) => {
@@ -161,6 +170,7 @@ class Header extends Component {
                   })}
                 </ul>
               </div>
+
               <div className="col-3">
                 <h5>Property for Rent</h5>
                 <ul>
@@ -168,18 +178,21 @@ class Header extends Component {
                     return <li key={ind}>{val}</li>;
                   })}
                 </ul>
+
                 <h5>Property for Sale</h5>
                 <ul>
                   {allData.propertySaleData.map((val, ind) => {
                     return <li key={ind}>{val}</li>;
                   })}
                 </ul>
+
                 <h5>Vehicles</h5>
                 <ul>
                   {allData.VehiclesData.map((val, ind) => {
                     return <li key={ind}>{val}</li>;
                   })}
                 </ul>
+                
                 <h5>Mobiles</h5>
                 <ul>
                   {allData.MobileData.map((val, ind) => {

@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap");
+
+.MainComponent {
+  width: 100%;
+  margin: 50px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.MainComponent .underSuper {
+  width: 94%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.MainComponent .underSuper .img_cupboard {
+  width: 65%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  background: #000;
+}
+
+.img_cupboard img {
+  min-width: auto;
+  max-width: 100%;
+  height: 100%;
+}
+
+.underSuper .dtail_cupboard {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+}
+
+.dtail_cupboard .price_cupboard {
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #d4d3d3;
+  display: flex;
+  flex-direction: column;
+}
+
+.price_cupboard .paisa {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.paisa h1 {
+  font-family: "Abel", sans-serif;
+  font-size: 36px !important;
+  color: #002f34;
+  font-weight: bold;
+}
+
+.paisa .logoss {
+  padding: 3px 0 0 0;
+}
+
+.paisa .logoss > * {
+  margin: 0 8px;
+  font-size: 25px;
+}
+
+.price_cupboard > h1 {
+  font-size: 20px !important;
+  color: #002f34 !important;
+  font-family: "Abel", sans-serif;
+  font-weight: normal;
+}
+
+.price_cupboard > h2 {
+  font-size: 18px;
+  color: rgba(0, 47, 52, 0.64);
+  font-family: "Abel", sans-serif;
+}
+
+.price_cupboard .area_city {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 20px 0 0 0;
+}
+
+.area_city p {
+  font-size: 14px;
+  color: rgba(0, 47, 52, 0.64);
+  font-weight: normal;
+  font-family: "Abel", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.description_cupboard {
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #d4d3d3;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.description_cupboard h1 {
+  font-family: "Abel", sans-serif;
+  color: #002f34 !important;
+  font-size: 25px;
+  font-weight: normal;
+}
+
+.description_cupboard .bioData {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
+}
+
+.bioData .first {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.bioData .first img {
+  width: 30%;
+  height: 100%;
+  padding: 3px 7px;
+}
+
+.first .namess {
+  width: 70%;
+  padding: 5px 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.namess h3 {
+  font-family: "Abel", sans-serif;
+  font-size: 20px !important;
+  margin: 0;
+  padding: 0;
+  color: #002f34 !important;
+}
+
+.namess p {
+  font-family: "Abel", sans-serif;
+  font-size: 13px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  color: rgba(0, 47, 52, 0.64) !important;
+}
+
+.bioData .second {
+  width: 30%;
+  display: flex;
+  padding: 5px 0;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.bioData .second > * {
+  font-size: 30px;
+}
+
+.description_cupboard button {
+  margin: 5px 0;
+  width: 100%;
+  padding: 5px 3px;
+  color: #fff;
+  background: #002f34;
+  font-family: "Abel", sans-serif;
+  border-radius: 5px;
+  border: none;
+}
+
+.description_cupboard button:hover {
+  color: #002f34;
+  background: #fff;
+  padding: 2px 0;
+  border: 3px solid #002f34;
+}
+
+.description_cupboard .phone_area {
+  width: 100%;
+  padding: 15px 0 5px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.phone_area > * {
+  margin: 0 5px;
+}
+
+.phone_area a {
+  text-decoration: underline !important;
+  color: #6c99ff !important;
+  font-size: 14px;
+}
