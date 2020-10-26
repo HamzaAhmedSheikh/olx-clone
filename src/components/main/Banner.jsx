@@ -10,9 +10,9 @@ class Banner extends Component {
   render() {
     return (
       <section>
-       <div className="banner">
-        <div className="bannerImage"></div>   
-       </div>         
+         
+        <img src={bannerImage} className="banner" alt='banner image' />        
+         
      </section>  
     )
    } 

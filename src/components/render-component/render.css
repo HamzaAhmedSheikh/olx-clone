@@ -33,7 +33,7 @@
   flex-direction: column;
 }
 
-.dtail_cupboard .price_cupboard {
+.detail_cupboard .price_cupboard {
   width: 100%;
   padding: 20px;
   border: 1px solid #d4d3d3;
@@ -41,24 +41,24 @@
   flex-direction: column;
 }
 
-.price_cupboard .paisa {
+.price_cupboard .price {
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
 
-.paisa h1 {
+.price h1 {
   font-family: "Abel", sans-serif;
   font-size: 36px !important;
   color: #002f34;
   font-weight: bold;
 }
 
-.paisa .logoss {
+.price .logos {
   padding: 3px 0 0 0;
 }
 
-.paisa .logoss > * {
+.price .logos > * {
   margin: 0 8px;
   font-size: 25px;
 }

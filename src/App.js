@@ -5,10 +5,12 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 // import HomePage from './components/Home'
 // import Header from './components/Header'
 // import Footer from './components/component/Footer';
-import Footer from './components/footer/MainFooter';
+
 // import Navbars from './components/component/Navbar';
 import Navbars from './components/header/Header'
 import MainWrapper from "./components/main/MainContent";
+import PassingData from "./components/render-component/Passing";
+import Footer from './components/footer/MainFooter';
 // import Banner from './components/component/Banner';
 import ProductContextProvider from './Global/ProductContext';
 import Products from './components/component/Products';
@@ -29,12 +31,23 @@ const MAINPAGE = () => {
   );
 };
 
+const componentPage = () => {
+  return (
+    <>
+      <Navbars />
+      <PassingData />
+      <Footer />
+    </>
+  );
+};
+
 
 function App() {
   return (
     <Router>
       <Switch>
-      <Route exact path="/" component={MAINPAGE} />        
+      <Route exact path="/" component={MAINPAGE} />      
+      <Route path="/cards/:detail" component={componentPage} />  
       </Switch>
     </Router>    
   );
