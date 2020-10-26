@@ -10,12 +10,12 @@ import { useStateValue } from '../../GlobalState/ContextProvider';
     {text: 'WhatsApp', icon: <materialIcon.WhatsAppIcon />},
     {text: 'Facebook',  icon: <materialIcon.FacebookIcon />}, 
     {text: 'Linkeden',  icon: <materialIcon.LinkedInIcon />}
-    ];
+  ];
 
  const useStyles = makeStyles({
     avatar: {
         backgroundColor: '#000',
-         color: '#fff',
+        color: '#fff',
     },
  });
 
@@ -119,84 +119,77 @@ import { useStateValue } from '../../GlobalState/ContextProvider';
         /*----------------------------------------------------------------------*/
 
         <div className="col col-lg-4 col-md-12 col-sm-12 col-12">
-          <Paper elevation={3} className="paper">
+         <Paper elevation={3} className="paper">
             <div className="d-flex align-items-center justify-content-between">
-              <h2 style={{ display: "inline" }}>Rs. {price * 100}</h2>
-              <span>
-                <IconButton style={{ margin: "0 4px", outline: 'none', border: 'none' }} onClick={()=>ToggleFavourite(props)} >
-                  {basket.filter(({ id }) => {
+            <h2 style={{ display: "inline" }}> Rs. {price * 100} </h2>
+
+            <span>
+              <materialIcon.IconButton style={{ margin: "0 4px", outline: 'none', border: 'none' }} onClick={()=>ToggleFavourite(props)}>
+                {basket.filter(({ id }) => {
                     return +id === +props.id;
-                  }).length > 0 ? (
-                    <FavoriteIcon style={{ border: "none", outline: "none" }} />
-                  ) : (
-                    <FavoriteBorderIcon
-                      style={{ border: "none", outline: "none" }}
-                    />
+                }).length > 0 ? (
+                    <materialIcon.FavoriteIcon style={{ border: "none", outline: "none" }} />
+                ) : (
+                    <materialIcon.FavoriteBorderIcon style={{ border: "none", outline: "none" }} />
                   )}
-                </IconButton>
-                <IconButton style={{ margin: "0 4px" , outline: 'none', border: 'none' }} onClick={handleClickOpen}>
-                  <ShareIcon />
-                </IconButton>
+              </materialIcon.IconButton>
+
+              <materialIcon.IconButton style={{ margin: "0 4px" , outline: 'none', border: 'none' }} onClick={handleClickOpen}>
+                  <materialIcon.ShareIcon />
+              </materialIcon.IconButton>
+
                 <SimpleDialog selectedValue={selectedValue} open={open} onClose={handleClose} />
-              </span>
-            </div>
-            <div>
-              <p className="text-secondary">{title}</p>
-            </div>
-            <div className="d-flex align-items-center justify-content-between text-secondary">
-              <span>
-                <small>University Road, Karachi, Sindh</small>
-              </span>
-              <span>
-                <small>{time !== undefined ? time : "Oct 12th 2019"}</small>
-              </span>
-            </div>
-          </Paper>
+            </span>
+           </div>
+
+             <div>
+                <p className="text-secondary">{title}</p>
+             </div>
+
+             <div className="d-flex align-items-center justify-content-between text-secondary">
+               <span>
+                 <small>University Road, Karachi, Sindh</small>
+               </span>
+
+               <span>
+                 <small>{time !== undefined ? time : "Oct 12th 2019"}</small>
+               </span>
+             </div>
+           </Paper>
 
       /*------------------------------------------------------------------------------*/
-      <Paper elevation={3} className="paper" style={{ marginTop: "20px" }}>
-            <div style={{ marginBottom: "18px" }}>
-              <h4 style={{ display: "inline", marginBottom: "18px" }}>
-                Seller Description
-              </h4>
-            </div>
-            <div className="d-flex align-items-center justify-content-start">
-              <p style={{ display: "inline", marginRight: "10px" }}>
-                <Avatar src="/broken-image.jpg" />
-              </p>
-              <p className="d-flex flex-column align-items-start justify-content-start">
-                <span>{name !== undefined ? name : "Unknown"}</span>
-                <span>
-                  <small>Member since Feb 2019</small>
-                </span>
-              </p>
-            </div>
 
-            <div>
-              <Button
-                href={ `mailto:${emails}`}
-                variant="contained"
-                style={{
-                  width: "100%",
-                  backgroundColor: "#002f34",
-                  color: "#fff",
-                  border: "none",
-                }}
-              >
+       <Paper elevation={3} className="paper" style={{ marginTop: "20px" }}>
+          <div style={{ marginBottom: "18px" }}>
+            <h4 style={{ display: "inline", marginBottom: "18px" }}> Seller Description </h4>
+          </div>
+
+          <div className="d-flex align-items-center justify-content-start">
+            <p style={{ display: "inline", marginRight: "10px" }}>
+                <Avatar src="/broken-image.jpg" />
+            </p>
+
+            <p className="d-flex flex-column align-items-start justify-content-start">
+              <span> {name !== undefined ? name : "Unknown"} </span>
+              <span> <small>Member since Feb 2019</small>   </span>
+            </p>
+          </div>
+
+          <div>
+            <Button href={ `mailto:${emails}`} variant="contained" style={{width: "100%", backgroundColor: "#002f34", color: "#fff", border: "none",}}>
                 Chat with Seller
-              </Button>
-            </div>
-            <div
-              className="d-flex align-items-center justify-content-center"
-              style={{ marginTop: "20px" }}
-            >
-              <PhoneIcon />
+            </Button>
+          </div>
+
+          <div className="d-flex align-items-center justify-content-center" style={{ marginTop: "20px" }}>
+              <materialIcon.PhoneIcon />
               {number ? number : "+92334567782"}
-            </div>
-          </Paper>
-          <div style={{ marginTop: "20px" }}>Add Id: 12572882829{id}</div>
-        </div>
-      </div>
+          </div>
+       </Paper>
+
+          <div style={{ marginTop: "20px" }}> Add Id: 12572882829{id} </div>
+       </div>
+     </div>
     </div>
   );
 };
