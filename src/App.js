@@ -6,36 +6,36 @@ import Navbars from './components/header/Header'
 import MainWrapper from "./components/main/MainContent";
 import PassingData from "./components/render-component/Passing";
 import Footer from './components/footer/MainFooter';
+import Header from './Component/Header'
 
 
+// const MAINPAGE = () => {
+//   return (
+//     <>
+//       <Navbars />
+//       <Header />
+//       <Footer />
+//     </>
+//   );
+// };
 
-const MAINPAGE = () => {
-  return (
-    <>
-      <Navbars />
-      <MainWrapper />
-      <Footer />
-    </>
-  );
-};
-
-const componentPage = () => {
-  return (
-    <>
-      <Navbars />
-      <PassingData />
-      <Footer />
-    </>
-  );
-};
+// const componentPage = () => {
+//   return (
+//     <>
+//       <Navbars />
+//       <PassingData />
+//       <Footer />
+//     </>
+//   );
+// };
 
 
 function App() {
   return (
     <Router>
       <Switch>
-      <Route exact path="/" component={MAINPAGE} />      
-      <Route path="/cards/:detail" component={componentPage} />  
+      <Route exact path="/" component={Header} />      
+      {/* <Route path="/cards/:detail" component={componentPage} />   */}
       </Switch>
     </Router>    
   );

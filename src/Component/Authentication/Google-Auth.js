@@ -1,4 +1,4 @@
-import { auth, google_provider } from '../../Pages/Login';
+import { auth, google_provider } from '../../Pages/Login_Auth';
 
  export const Google_auth_login = (dispatch) => {
 

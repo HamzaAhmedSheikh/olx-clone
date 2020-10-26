@@ -1,4 +1,4 @@
-import { auth, provider } from '../../Pages/Login'
+import { auth, provider } from '../../Pages/Login_Auth'
 
 
  export const Fb_auth_login = (dispatch) => {

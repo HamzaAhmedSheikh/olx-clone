@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, CardActionArea, CardActions, CardContent, CardMedia, Typography } from '@material-ui/core';
+import { Card, CardActionArea, CardActions, CardContent, CardMedia, Typography, IconButton } from '@material-ui/core';
 import * as materialIcon from "@material-ui/icons"; //materialIcon.Search
 import { makeStyles } from '@material-ui/core/styles';
 import { useStateValue } from '../../GlobalState/ContextProvider';
@@ -66,21 +66,21 @@ import {Link} from 'react-router-dom'
    return (
     <Card className={classes.root}>
      <CardActions>
-      <materialIcon.IconButton aria-label="add to favorites" style={{border: 'none', outline: 'none'}} onClick={()=>ToggleFavourite(props)}>
+      <IconButton aria-label="add to favorites" style={{border: 'none', outline: 'none'}} onClick={()=>ToggleFavourite(props)}>
         {(basket.filter(({id})=> {
             return +id === +props.id
         })).length > 0 ? <materialIcon.FavoriteIcon style={{border: 'none', outline: 'none'}} />
           : <materialIcon.FavoriteBorderIcon style={{border: 'none', outline: 'none'}} />
         }
               
-      </materialIcon.IconButton>
+      </IconButton>
 
-       <materialIcon.IconButton aria-label="add to favorites" style={{border: 'none', outline: 'none'}}>
+       <IconButton aria-label="add to favorites" style={{border: 'none', outline: 'none'}}>
          <materialIcon.DetailsIcon style={{border: 'none', outline: 'none'}} />
-       </materialIcon.IconButton>
+       </IconButton>
      </CardActions>      
 
-      <CardActionArea component={Link} to={`/add_users/${props.id.toString()}`}  style={{textDecoration: 'none', color: 'black'}}>
+      <CardActionArea component={Link} to={`/add_users/${props.id.toString()}`} style={{textDecoration: 'none', color: 'black'}}>
         <CardMedia className={classes.media}>
           <img 
             src={`https://firebasestorage.googleapis.com/v0/b/pwa-olx-clone-application.appspot.com/o/${props.id.toString()}?alt=media&token=4dede770-68f6-4c7e-879f-da97e126463a`}
