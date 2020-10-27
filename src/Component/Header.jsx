@@ -103,7 +103,7 @@ function Header() {
     handleClose();
   };
 
-  const [open1, setOpen1] = React.useState(false);
+  const [open1, setOpen1] = useState(false);
 
   const handleClick = () => {
     setOpen1((prev) => !prev);
@@ -132,6 +132,7 @@ function Header() {
           <img src='' alt="Olx-Logo" width="50" height="50" />
         </Link>
       </div>
+      
       <div className="header__controlSearchBar">
         <InputBase
           placeholder="Find Cars, Mobile Phones and much more ...."
@@ -315,3 +316,4 @@ function Header() {
   );
 }
 export default Header;
+  
