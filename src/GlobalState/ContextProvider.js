@@ -1,6 +1,6 @@
-import React, { createContext, useReducer, useContext } from 'react'
-export const StateContext = createContext();
+import React, { createContext, useReducer, useContext } from 'react';
 
+export const StateContext = createContext();
 
 const StateProvider = ( {initialState, reducer, children} ) => {
     return(
