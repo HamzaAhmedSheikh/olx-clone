@@ -12,6 +12,7 @@ import IconButton from '@material-ui/core/IconButton';
 import {Link} from 'react-router-dom';
 import {useStateValue} from '../../GlobalState/ContextProvider';
 import FavoriteIcon from '@material-ui/icons/Favorite';
+import FirebaseData from '../FirebaseData';
 
 const useStyles = makeStyles({
   root: {
@@ -108,7 +109,7 @@ const DisplayCard = (props) => {
           </Typography>
           </CardContent>
           </CardActionArea>
-         
+          <FirebaseData />
       </Card>
     )
 }
