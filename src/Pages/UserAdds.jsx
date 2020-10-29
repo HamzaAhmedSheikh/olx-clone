@@ -1,5 +1,6 @@
 import React, {useState, useEffect}  from 'react';
 import firebase from 'firebase';
+import { storage } from './Login'
 import Header from "../Component/Header";
 import Navbar from "../Component/Navbar";
 import Footer from '../Component/footer/MainFooter';
@@ -37,7 +38,7 @@ const UserAdds = () => {
     const link = window.location.href;
     const addNumber = link.split('/add_users/')[1]
 
-
+    
 
     const takeData = () => {
 
