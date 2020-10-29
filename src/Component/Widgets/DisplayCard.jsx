@@ -74,6 +74,7 @@ const DisplayCard = (props) => {
     }
 
     return (
+    
         <Card className={classes.root}>
           
           <CardActions >
@@ -109,8 +110,9 @@ const DisplayCard = (props) => {
           </Typography>
           </CardContent>
           </CardActionArea>
-          <FirebaseData />
-      </Card>
+        </Card>
+         
+        
     )
 }
 
