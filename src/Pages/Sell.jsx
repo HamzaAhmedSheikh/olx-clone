@@ -41,13 +41,13 @@ const Sell = () => {
     const fileRef = storageRef.child(id.toString());
     fileRef.put(file).
     then(()=> console.log("Uploaded A file......................................."))
-    .catch((e)=>alert('File Size should not excceed 1Mb'))
+    .catch((e)=>alert('It is a warning, file size should not excceed 1Mb'))
     alert(category)
   }
 
 
  const handleFormSubmit = (e) => {
-
+    
     e.preventDefault();
     writeUserData( id, title, price, description, category, name, number, email, location);
     history.push('/')
