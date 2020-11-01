@@ -37,8 +37,9 @@ const Sell = () => {
 
   const uploadFile = (files) => {
     const file = files[0];
-    const storageRef = storage.ref();
+    const storageRef = storage.ref().child();
     const fileRef = storageRef.child(id.toString());
+    
     fileRef.put(file).
     then(()=> console.log("Uploaded A file......................................."))
     .catch((e)=>alert('It is a warning, file size should not excceed 1Mb'))
