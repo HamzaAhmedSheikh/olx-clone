@@ -44,7 +44,7 @@ const UserAdds = () => {
 
     let firebaseRef = firebase.database().ref("users");  
     firebaseRef.once("value", (snapshot) => {
-      console.log(snapshot.val(), '===>132');
+      console.log(snapshot, '===>132');
     const {id, title, price, description, category, location, email, name, number} = snapshot.val()[addNumber]
      
     setid(id)
@@ -87,7 +87,7 @@ const UserAdds = () => {
         email = {email}
         name={name}
         number={number}
-        image = {`https://firebasestorage.googleapis.com/v0/b/olx-clone-a4154.appspot.com/o/${id.toString()}?alt=media&token=https://firebasestorage.googleapis.com/v0/b/olx-clone-a4154.appspot.com/o/23909107928999793?alt=media&token=6dee5b9b-36c2-4eaf-8313-16ac203e44d5`}
+        image={`https://firebasestorage.googleapis.com/v0/b/olx-clone-a4154.appspot.com/o/${id.toString()}?alt=media&token=https://firebasestorage.googleapis.com/v0/b/olx-clone-a4154.appspot.com/o/039856510615891384?alt=media&token=3b979ffc-6341-41eb-b7ad-0870d1095653`}
        />                                                                                                                                                      
        
       
