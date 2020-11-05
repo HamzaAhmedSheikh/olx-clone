@@ -43,8 +43,7 @@ const UserAdds = () => {
     const takeData = () => {
 
     let firebaseRef = firebase.database().ref("users");  
-    firebaseRef.once("value", (snapshot) => {
-      console.log(snapshot, '===>132');
+    firebaseRef.once("value", (snapshot) => {      
     const {id, title, price, description, category, location, email, name, number} = snapshot.val()[addNumber]
      
     setid(id)

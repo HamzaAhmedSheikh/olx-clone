@@ -1,6 +1,6 @@
 import firebase from 'firebase'
 
- export const writeUserData = (id, title, price, description, category, name, number, email, location, image) => {
+ export const writeUserData = (id, title, price, description, category, name, number, email, location) => {
     
     let details = {
         id: id,
@@ -11,8 +11,7 @@ import firebase from 'firebase'
         name: name,
         number: number,
         email: email,
-        location: location, 
-           
+        location: location       
     }
 
     firebase.database().ref('users').child(id).set(details);
