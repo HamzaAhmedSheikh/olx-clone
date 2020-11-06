@@ -31,7 +31,7 @@ const Sell = () => {
   const [email, setemail] = useState("");
   const [location, setlocation] = useState("");
   const [id, setid] = useState(((Math.random()* Math.random()).toString()).split('.')[1]);
-
+  const [url, setUrl] = useState("")
 
  // Storing Images in Cloud Storage
 
@@ -39,14 +39,27 @@ const Sell = () => {
     const file = files[0];
     const storageRef = storage.ref();
     const fileRef = storageRef.child(id.toString());
-     
-    console.log('storageRef', storageRef);
-    console.log('fileRef', fileRef);
 
-    fileRef.put(file).
-    then(()=> console.log("Uploaded A file......................................."))
-    .catch((e)=>alert('It is a warning, file size should not excceed 1Mb'))
-    alert(category)
+    fileRef.put(file)
+      .then(()=> console.log("Uploaded A file......................................."))
+      .catch((e)=>alert('It is a warning, file size should not excceed 1Mb'))
+      
+      alert(category)
+      
+      //  fileRef.on("state_changed",
+      //   snapshot => {}, 
+      //   error => {
+      //     console.log(error);
+      //   },
+      //   () => {
+      //     storage.ref().child(id.toString()).getDownloadURL().then(url => {
+            
+      //        setUrl(url)
+      //     })
+      //   })
+    
+      
+       
   }
 
 
