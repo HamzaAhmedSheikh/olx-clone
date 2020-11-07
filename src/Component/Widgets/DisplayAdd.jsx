@@ -75,7 +75,7 @@ SimpleDialog.propTypes = {
 
 
 const DisplayAdd = (props) => {
-
+  console.log(props);
   const [open, setOpen] = React.useState(false);
   const [selectedValue, setSelectedValue] = React.useState(emails[1]);
 

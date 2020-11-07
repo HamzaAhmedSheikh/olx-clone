@@ -11,8 +11,7 @@ import firebase from 'firebase'
         name: name,
         number: number,
         email: email,
-        location: location,
-        image: ''       
+        location: location,              
     }
 
     firebase.database().ref('users').child(id).set(details);
