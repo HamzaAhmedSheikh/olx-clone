@@ -86,13 +86,14 @@ const UserAdds = () => {
         email = {email}
         name={name}
         number={number}
-        image={`https://firebasestorage.googleapis.com/v0/b/olx-clone-a4154.appspot.com/o/${id.toString()}?alt=media&token=https://firebasestorage.googleapis.com/v0/b/olx-clone-a4154.appspot.com/o/039856510615891384?alt=media&token=3b979ffc-6341-41eb-b7ad-0870d1095653`}
-       />                                                                                                                                                      
+        image={`https://firebasestorage.googleapis.com/v0/b/olx-clone-a4154.appspot.com/o/${id.toString()}?alt=media&token=3b979ffc-6341-41eb-b7ad-0870d1095653`}
+      />     
+                                                                                                                                                     
        
       
         <Footer/>
     </div>
     )
 }
-
 export default UserAdds;
+// export default UserAdds;039856510615891384
