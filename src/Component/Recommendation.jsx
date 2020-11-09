@@ -24,11 +24,11 @@ const Recommendation = () => {
 
     return (
         <div className='recommendation__component'>
-          {data !== undefined? 
+          {data !== undefined ? 
           <>
             <h4 style={{textAlign: 'center'}}>Fresh recommendations</h4>
             <div className='recommendation__component__list'>
-            {data?.map((current)=> {
+            {data?.map((current)=> {              
              return current.id !== 20 ? 
              <DisplayCard 
               id={current.id}

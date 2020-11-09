@@ -37,6 +37,7 @@ const useStyles = makeStyles({
 });
 
 function SimpleDialog(props) {
+  
   const classes = useStyles();
   const { onClose, selectedValue, open } = props;
 
@@ -75,7 +76,6 @@ SimpleDialog.propTypes = {
 
 
 const DisplayAdd = (props) => {
-  console.log(props);
   const [open, setOpen] = React.useState(false);
   const [selectedValue, setSelectedValue] = React.useState(emails[1]);
 
@@ -102,7 +102,7 @@ const DisplayAdd = (props) => {
     number,
   } = props;
   const [{ basket }, dispatch] = useStateValue();
-
+    
   const ToggleFavourite = (prop) => {
     basket.filter(({ id }) => {
       return +id === +prop.id;
