@@ -4,7 +4,7 @@ import Navbar from '../Component/Navbar';
 import ImageMain from '../Component/ImageMain';
 import Recommendation from '../Component/Recommendation';
 import Footer from '../Component/footer/MainFooter';
-
+import ProductCard from '../Component/ProductCard';
 
 import '../App.css';
 
@@ -14,7 +14,8 @@ export default function Home() {
       <Header />
       <Navbar />
       <ImageMain />
-      <Recommendation />      
+      <Recommendation />     
+      <ProductCard />    
       <Footer />
     </div>
   );

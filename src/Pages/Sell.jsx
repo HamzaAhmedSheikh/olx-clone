@@ -4,7 +4,8 @@ import { makeStyles } from "@material-ui/core/styles";
 import Paper from "@material-ui/core/Paper";
 import { writeUserData } from '../Component/Database/SubmitAdd';
 import { useHistory } from 'react-router-dom';
-import { storage } from '../Pages/Login';
+import { database } from '../Pages/Login';
+import { Link } from 'react-router-dom';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -20,6 +21,9 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const Sell = () => {
+  var today = new Date(),
+    date = today.getDate() + "-" + (today.getMonth() + 1); 
+
   const classes = useStyles();
   const history = useHistory();
   const [title, settitle] = useState("");
@@ -32,43 +36,44 @@ const Sell = () => {
   const [location, setlocation] = useState("");
   const [id, setid] = useState(((Math.random()* Math.random()).toString()).split('.')[1]);
   const [url, setUrl] = useState("")
+  const [image, setImage] = useState('');
+  const [dates, setDate] = useState(date);
 
- // Storing Images in Cloud Storage
-
-  const uploadFile = (files) => {
-    const file = files[0];
-    const storageRef = storage.ref();
-    const fileRef = storageRef.child(id.toString());
-
-    fileRef.put(file)
-      .then(()=> console.log("Uploaded A file......................................."))
-      .catch((e)=>alert('It is a warning, file size should not excceed 1Mb'))
-      
-      alert(category)
-      
-      //  fileRef.on("state_changed",
-      //   snapshot => {}, 
-      //   error => {
-      //     console.log(error);
-      //   },
-      //   () => {
-      //     storage.ref().child(id.toString()).getDownloadURL().then(url => {
-            
-      //        setUrl(url)
-      //     })
-      //   })
+  const handleFormSubmit = (e) => {   
     
-      
-       
-  }
-
-
- const handleFormSubmit = (e) => {
-    
-    e.preventDefault();
-    writeUserData( id, title, price, description, category, name, number, email, location);
-    history.push('/')
-    alert('Your Add will be live in few Seconds..');
+    if (
+      title === "" ||
+      price === "" ||
+      description === "" ||
+      category === "" ||
+      name === "" ||
+      number === "" ||
+      location === "" ||
+      image === ""        
+    ) {
+      alert("input all fields");
+    } else {
+       database.ref("/").child("post").push({
+        title: title,
+        category: category,
+        description: description,
+        price: price,        
+        number: number,
+        ownerName: name,
+        dates: date,
+        location: location,
+        productImg: image
+        // productCategory: title,
+        // productTitle: category,
+        // productDetail: description,
+        // productPrice: price,
+        // productImg: productImage,
+        // location: number,
+        // ownerName: name,
+        // ownerContact: location,        
+      });
+      alert("submitted successfully");
+    }    
  }
 
 
@@ -84,9 +89,9 @@ const Sell = () => {
         <p className='text-center'><b>OLX</b> Pakistan Largest Market Place</p>
           <Paper elevation={3}>
             <form onSubmit ={handleFormSubmit} autoComplete="off">
-                
+               
               <div className="form-group">
-                <label htmlFor="title">Add Title</label>
+                <label htmlFor="title">Add Product Title</label>
                 <input
                   required
                   onChange={(e)=> {settitle(e.target.value)}}
@@ -114,7 +119,7 @@ const Sell = () => {
                 />
               </div>
               <div className="form-group">
-                <label htmlFor="Name">Name</label>
+                <label htmlFor="Name"> Name </label>
                 <input
                   required
                   onChange={(e)=> {setname(e.target.value)}}
@@ -175,11 +180,14 @@ const Sell = () => {
                 onChange={(e)=> {setdescription(e.target.value)}} value={description}></textarea>
               </div>
               <div className="form-group">
-                <label htmlFor="UploadPhotos">Upload Photos</label>
+                {/* <label htmlFor="UploadPhotos">Upload Photos</label> */}
+                <h6> Enter URL of Photos </h6>
                 <input
                 required
-                onChange={(e)=> {uploadFile(e.target.files)}}
-                type="file" className="form-control-file" />
+                // value={image}
+                onChange={(e) => setImage({ image: e.target.value })}
+                type="text"
+              />
               </div>
 
               <div className="form-group form-check">
@@ -193,15 +201,16 @@ const Sell = () => {
                   Check me out
                 </label>
               </div>
+            
             <button type="submit" className="btn btn-primary">
                 Submit
-              </button>
+            </button>            
             </form>
           </Paper>
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
 export default Sell;
