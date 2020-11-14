@@ -5,16 +5,17 @@ import ImageMain from '../Component/ImageMain';
 import Recommendation from '../Component/Recommendation';
 import Footer from '../Component/footer/MainFooter';
 
+
 import '../App.css';
 
 export default function Home() {
-    return (
-        <div className='Home'>
-            <Header />
-            <Navbar />
-            <ImageMain />
-            <Recommendation />            
-            <Footer />
-        </div>
-    )
+  return (
+    <div className="Home">
+      <Header />
+      <Navbar />
+      <ImageMain />
+      <Recommendation />      
+      <Footer />
+    </div>
+  );
 }

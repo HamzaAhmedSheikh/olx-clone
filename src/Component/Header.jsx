@@ -137,20 +137,20 @@ function Header() {
         <Link to="/">
           <img src={OlxLogo} alt="logo" />
         </Link>
-       </div>
+      </div>
 
-       <div className="search-area">
+      <div className="search-area">
         <select name="search" id="search-area">
           <option value="Pakistan" selected>
             Pakistan
           </option>
-            {allData.locationData.map((val, ind) => {
-              return (
-                <option key={ind} value={val}>
-                  {val}
-                </option>
-              );
-           })}
+          {allData.locationData.map((val, ind) => {
+            return (
+              <option key={ind} value={val}>
+                {val}
+              </option>
+            );
+          })}
         </select>
       </div>
 
@@ -172,8 +172,10 @@ function Header() {
           </IconButton>
         </span>
       </div>
-      
-       <div className="header__login"> {/* Login or Logout */}
+
+      <div className="header__login">
+        {" "}
+        {/* Login or Logout */}
         {userdata.user === false ? (
           <button
             onClick={handleOpen}
@@ -219,7 +221,10 @@ function Header() {
                   </div>
 
                   <div className="Badge" style={{ margin: "20px 0px" }}>
-                    <Button onClick={handleClickOpen} style={{border: 'none', outline: 'none'}}>
+                    <Button
+                      onClick={handleClickOpen}
+                      style={{ border: "none", outline: "none" }}
+                    >
                       <Badge badgeContent={basket?.length} {...defaultProps} />
                       View Favourite Adds
                     </Button>
@@ -252,21 +257,23 @@ function Header() {
                         </Toolbar>
                       </AppBar>
                       <List>
-                        {basket?.map((current)=>{
-                         return <>
-                          <ListItem button component = {Link} to = {`/add/${current.id}`}>
-                          <ListItemText
-                            primary={current.title}
-                            secondary={`$ ${current.price}`}
-                            
-                          />
-                          </ListItem>
-                          <Divider />
-                        </>
+                        {basket?.map((current) => {
+                          return (
+                            <>
+                              <ListItem
+                                button
+                                component={Link}
+                                to={`/add/${current.id}`}
+                              >
+                                <ListItemText
+                                  primary={current.title}
+                                  secondary={`$ ${current.price}`}
+                                />
+                              </ListItem>
+                              <Divider />
+                            </>
+                          );
                         })}
-                        
-                        
-                        
                       </List>
                     </Dialog>
                   </div>
@@ -280,7 +287,6 @@ function Header() {
             </div>
           </ClickAwayListener>
         )}
-
         <Modal
           aria-labelledby="transition-modal-title"
           aria-describedby="transition-modal-description"

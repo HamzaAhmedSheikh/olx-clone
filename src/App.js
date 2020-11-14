@@ -7,7 +7,8 @@ import Category from './Pages/Category'
 import Add from './Pages/Add'
 import UserAdds from './Pages/UserAdds'
 import NotFound from './Pages/NotFound'
-
+import DetailForm from './Component/productDetailForm'
+import PostYourAdd from './Component/postYourAdd';
 
 function App() {
 
@@ -29,7 +30,8 @@ function App() {
           </Route>
           <Route path='/add/'>
               <Add/>
-          </Route>         
+          </Route>    
+           
           <Route path='/notfound'>
               <NotFound/>
           </Route>
