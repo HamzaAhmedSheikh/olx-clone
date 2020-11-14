@@ -8,6 +8,7 @@ import Add from './Pages/Add'
 import UserAdds from './Pages/UserAdds'
 import NotFound from './Pages/NotFound'
 
+
 function App() {
 
   return (
@@ -28,7 +29,7 @@ function App() {
           </Route>
           <Route path='/add/'>
               <Add/>
-          </Route>
+          </Route>         
           <Route path='/notfound'>
               <NotFound/>
           </Route>
