@@ -17,8 +17,9 @@ class ProductCard extends Component {
         let product = [];
         data.forEach((list) => {
           product.push(list.val());          
-        });
+        });        
         this.setState({ product: product });
+        console.log(product.productImg);
       });
   }
 

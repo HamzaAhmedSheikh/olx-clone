@@ -35,8 +35,8 @@ const Sell = () => {
   const [email, setemail] = useState("");
   const [location, setlocation] = useState("");
   const [id, setid] = useState(((Math.random()* Math.random()).toString()).split('.')[1]);
-  const [url, setUrl] = useState("")
-  const [image, setImage] = useState('');
+  const [url, setUrl] = useState("");
+  const [image, setImage] = useState("");
   const [dates, setDate] = useState(date);
 
   const handleFormSubmit = (e) => {   
@@ -67,7 +67,7 @@ const Sell = () => {
         productTitle: title,
         productDetail: description,
         productPrice: price,
-        productImg: image,
+        // productImg: image,
         location: location,
         ownerName: name,
         // ownerContact: this.state.ownerContact,
@@ -85,7 +85,7 @@ const Sell = () => {
     }    
  }
 
-
+    
 
 
 
@@ -193,9 +193,10 @@ const Sell = () => {
                 <h6> Enter URL of Photos </h6>
                 <input
                 required
-                // value={image}
-                onChange={(e) => setImage({ image: e.target.value })}
+                value={image}
+                onChange={(e) => setImage({ image: e.target.value} )}
                 type="text"
+                id="UploadPhotos"
               />
               </div>
 
