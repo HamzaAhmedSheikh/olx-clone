@@ -14,8 +14,8 @@ export default function Home() {
       <Header />
       <Navbar />
       <ImageMain />
-      <Recommendation />     
-      <ProductCard />    
+      <ProductCard />   
+      <Recommendation />      
       <Footer />
     </div>
   );
