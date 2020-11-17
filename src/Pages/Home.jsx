@@ -6,6 +6,7 @@ import Recommendation from '../Component/Recommendation';
 import Footer from '../Component/footer/MainFooter';
 import ProductCard from '../Component/ProductCard';
 
+
 import '../App.css';
 
 export default function Home() {
@@ -13,7 +14,7 @@ export default function Home() {
     <div className="Home">
       <Header />
       <Navbar />
-      <ImageMain />
+      <ImageMain />     
       <ProductCard />   
       <Recommendation />      
       <Footer />

@@ -62,7 +62,7 @@ const Sell = () => {
         // ownerName: name,
         // dates: date,
         // location: location,
-        productImg: image,
+        productImg: image   ,
         productCategory: category,
         productTitle: title,
         productDetail: description,
@@ -183,11 +183,13 @@ const Sell = () => {
                     <option value='land'>Land and Plots</option>
                 </select>
               </div>
+
               <div className="form-group">
                 <label htmlFor="Description">Add Description</label>
                 <textarea className="form-control" id="Description" rows="3" type="text" required
                 onChange={(e)=> {setdescription(e.target.value)}} value={description}></textarea>
               </div>
+              
               <div className="form-group">
                 {/* <label htmlFor="UploadPhotos">Upload Photos</label> */}
                 <h6> Enter URL of Photos </h6>
